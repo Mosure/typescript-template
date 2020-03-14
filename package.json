@@ -1,0 +1,29 @@
+{
+  "name": "@mosure/typescript-template",
+  "version": "1.0.0",
+  "description": "Typescript Starter Template",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "start": "npm run build && node dist/main.js",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [],
+  "author": "Sudo.X LLC",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.0.0",
+    "typescript": "^3.7.5"
+  }
+}
